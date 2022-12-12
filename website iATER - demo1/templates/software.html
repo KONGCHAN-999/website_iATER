@@ -1,0 +1,39 @@
+{% extends "base.html" %} {%block content%} {% load static %}
+<link rel="stylesheet" href="{% static 'css/software.css' %}">
+<div class="text__containen">
+    <div class="text__content">
+        <div class="text__content-box1">
+            {% for i in sw_head %}
+            <h1 class="text__info">{{i.sw_h}}</h1>
+            <p class="text__form">{{i.sw_t}}</p>
+            {% endfor %}
+        </div>
+        <div class="img__comtent">
+            <img src="{% static 'img/r1.svg' %}" class="img-box1">
+            <img src="{% static 'img/r2.svg' %}" class="img-box2">
+            <img src="{% static 'img/r3.svg' %}" class="img-box3">
+            <img src="{% static 'img/r4.svg' %}" class="img-box4">
+        </div>
+    </div>
+</div>
+<!-- About_container -->
+<div class="about_container">
+    <div class="infor_conten">
+        <div class="infor_Item">
+            <div class="infor_sum_txt">
+                <h1>Software research and more</h1>
+                <p>ການສຶກສາຄົ້ນຄວ້າທາງດ້ານການສ້າງໂປຣແກຣມ ແລະ ການຮຽນການສອນ, ເສີມສ້າງທັກສະໃຫ້ມີຄວາມຮູ້ທາງດ້ານຕ່າງໆເຊັ່ນ: Font end developer, Back end developer and Full stack developer</p>
+            </div>
+            <img src="{% static 'img/r5.svg' %}">
+        </div>
+        <div class="infor_Item">
+            <img src="{% static 'img/3.jpg' %}">
+            <div class="infor_sum_txt">
+                <h1>Create website and Application</h1>
+                <p>ໃນ Lab Software ເຮົາມີການຝືກຝົນທັກສະການສ້າງ ແລະ ອອກແບບໂປຣແກຣມຕ່າງໆບໍ່ວ່າຈະເປັນເວັບໄຊ, ເວັບແອບ, ແອບໂມບ່າຍ, ການອອກແບບກຣາມຟີກເພື່ອໃຫ້ນັກສືກສາໄດ້ມີປະສົບການແທ້ໃນການເຮັດວຽກ</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel='stylesheet'>
+    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+    <title>iATER - 2022</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="{% url 'home' %}" class="nav__logo">
+                <img src="{% static 'img/logo2.jpg' %}" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="{% url 'software' %}">Lab Software</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="{% url 'education' %}">Lab Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="{% url 'blogs' %}">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'login' %}" class="text__button2">Login for steff</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="intro_hide">
+                    <span class="intro_text">Welcome To iATER</span>
+                </h1>
+                <h1 class="intro_hide">
+                    <span class="intro_text">Institute of Advanced Technology</span>
+                </h1>
+                <h1 class="intro_hide">
+                    <span class="intro_text">Education & Research</span>
+                </h1>
+            </div>
+        </div>
+        <div class="intro_slider"></div>
+    </header>
+
+
+    <div class="link__icon">
+        <div class="div1">
+            <a href="#" class="link__icon-a link1"><i class='bx bx-phone' ></i></i></a>
+        </div>
+        <div class="div2">
+            <a href="#" class="link__icon-a link2"><i class='bx bxl-gmail'></i></a>
+        </div>
+        <div class="div3">
+            <a href="#" class="link__icon-a link3"><i class='bx bxs-map' ></i></a>
+        </div>
+    </div>
+
+    {%block content%} {% endblock %}
+    <div class="header2">
+        <div class="inner-header flex">
+            <div class="vistion__content">
+                <h1>Vision & Target</h1>
+                <p>1. We research the future industries of 4th industrial technologies (AI, IOT, big data, robots, 3D printing, unmanned transportation, nanotechnology, etc.)</p>
+                <p>2. Efforts are being made to popularize IT through education and to bridge the technological gap with regions with poor environments.</p>
+                <p>3. Contribute to Laos and humanity with our talents.</p>
+            </div>
+            <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+            <g>
+                <path fill="#fff" d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+                    C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+                        c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z"
+                />
+            </g>
+            </svg>
+        </div>
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+        </div>
+    </div>
+
+    <div class="foo__content">
+        <div class="box__footer">
+            <div class="foo__boxx a1">
+                <img src="{% static 'img/logo2.jpg' %}">
+                <div class="text__foo">iATER: Institute of Advanced Technology <br> Education & Research</div>
+            </div>
+
+            <div class="foo__boxx b2">
+                <div class="h__footer">Navigation</div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Lab Software</a>
+                <a href="#">Lab Education</a>
+                <a href="#">Blogs</a>
+            </div>
+
+            <div class="foo__boxx c3">
+                <div class="h__footer">Contact</div>
+                <a href="#">E-mail: iATERLAO2020@gmail.com</a>
+                <a href="#">WEBSITE: iATERLAO.com</a>
+                <a href="#">Address: Tongpanthong-Sisattanak-Vieneiane.</a>
+                <a href="#">+856 020 546 458 87</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="{% static 'js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/aaaaaa1.js' %}"></script>
+</body>
+
+</html>

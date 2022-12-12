@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about_container {
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+}
+
+.about__con_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.about_h {
+    width: 80%;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+}
+
+.about_h p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.about_item img {
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.about_last_item {
+    display: flex;
+    margin: 7rem 0;
+}
+
+.about_somItem {
+    width: 50%;
+    font-size: 1.1rem;
+}
+
+.about_somItem img {
+    margin-top: 2rem;
+    width: 60%;
+}
+
+.about_iater {
+    margin-left: 10rem;
+}
+
+.about_iater img {
+    width: 40%;
+}
+
+.about_iater h3 {
+    width: 80%;
+}
+
+.text__form {
+    text-align: center;
+    width: 60%;
+}
+
+
+/* Unlock your skill  */
+
+.text__content_about {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.text__content_about p {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.infor_container {
+    height: auto;
+}
+
+.infor_conten {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.infor_sum_txt {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.15rem;
+    margin: 5rem 0;
+}
+
+.asdasd {
+    border-radius: 3px;
+}
+
+.text__form {
+    text-align: center;
+    width: 60%;
+}
+
+.infor_work {
+    background-color: var(--light);
+    padding: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.infor_work_p {
+    width: 30%;
+    text-align: center;
+}
+
+.txt_head {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.box-container .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.box-container .box .image {
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.box-container .box .content h3 {
+    font-size: 20px;
+    color: #334;
+}
+
+.box-container .box .content p {
+    font-size: 15px;
+    color: #777;
+    line-height: 2;
+    height: 10vh;
+    overflow: hidden;
+}
+
+.box-container .box .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+}
+
+.box-container .box .content .btn:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+}
+
+#load-more {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#load-more:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+}
+
+.seemore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.seemore a {
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.seemore a:hover {
+    color: #3ba0ff;
+}
+
+@media (max-width:450px) {
+    .heading {
+        font-size: 25px;
+    }
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+    .box-container .box .image {
+        height: 200px;
+    }
+    .box-container .box .content p {
+        font-size: 12px;
+    }
+    .box-container .box .content .icons span {
+        font-size: 12px;
+    }
+}

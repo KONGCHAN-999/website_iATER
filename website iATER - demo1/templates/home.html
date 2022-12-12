@@ -1,0 +1,71 @@
+{% extends "base.html" %} {%block content%} {% load static %}
+
+<div class="text__containen">
+    <div class="text__content">
+        <div class="text__content-box1">
+            {% for i in news %}
+            <h1 class="text__info">{{i.title}}</h1>
+            <p class="text__form">{{i.desc}}</p>
+            {% endfor %}
+            <a href="#" class="text__button">Read More</a>
+        </div>
+        
+        <div class="img__comtent">
+            <img src="{% static 'img/r1.svg' %}" class="img-box1">
+            <img src="{% static 'img/r2.svg' %}" class="img-box2">
+            <img src="{% static 'img/r3.svg' %}" class="img-box3">
+            <img src="{% static 'img/r4.svg' %}" class="img-box4">
+        </div>
+    </div>
+</div>
+<div class="about__content">
+    <div class="about__container">
+        {% for i in txt_wwr %}
+        <h1 class="h__content-text">{{i.t_head}}</h1>
+        <p class="about__text">
+            {{i.d_txt}}
+        </p>
+        {% endfor %}
+    </div>
+</div>
+<div class="slide-container swiper">
+    <div class="slide-content">
+        <div class="swiper-wrapper">
+            {% for i in img_home %}
+            <div class="swiper-slide">
+                <div class="card-image">
+                    <img src="{{i.image.url}}" alt="" class="card-img">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="Target_dev">
+    <h1>Organization</h1>
+    <div class="dev_content">
+        <div class="dev_item">
+            <p>Developing the ability to progress through individual professionalism(Web Front/Back end,App, Project Solution developer)</p>
+            <div class="dav_list">
+                <div class="dav_link">
+                    <img src="{% static 'img/service_catalog_icons_Software.png' %}" alt="">
+                    <a href="/labSoftware/software.html">Lab Software</a>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <div class="dav_link">
+                    <img src="{% static 'img/service_catalog_icons_Software.png' %}" alt="">
+                    <a href="/labEducation/education.html">Lab Education</a>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+            </div>
+        </div>
+        <div class="dev_img">
+            <img src="{% static 'img/devellopment_web1.png' %}" alt="">
+        </div>
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about_container {
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+}
+
+.about__con_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.about_h {
+    width: 80%;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+}
+
+.about_h p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.about_last_item {
+    display: flex;
+    margin: 10rem 0;
+}
+
+.about_somItem {
+    width: 50%;
+    font-size: 1.1rem;
+}
+
+.about_somItem img {
+    margin-top: 2rem;
+    width: 60%;
+}
+
+.about_iater {
+    margin-left: 10rem;
+}
+
+.about_iater img {
+    width: 40%;
+}
+
+.text__form {
+    text-align: center;
+    width: 60%;
+}
+
+.infor_conten {
+    margin: 8rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.infor_sum_txt {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.15rem;
+    margin: 6rem 0;
+}
+
+.infor_Item img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+
+/* We are a fullstack engineering team using best craftsmanship practises to deliver high-quality code. We practise Test Driven Development, Continuous Delivery, rigorous code review and pair programming. */

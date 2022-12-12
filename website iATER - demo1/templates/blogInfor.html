@@ -1,0 +1,32 @@
+{% extends "base.html" %} {%block content%} {% load static %}
+<link rel="stylesheet" href="{% static 'css/blogInf.css' %}">
+
+<div class="blogInf">
+    <h1>Lorem ipsum dolor ipsum dolor sit ametsit amet</h1>
+    <img src="{% static 'img/p14@2x.png' %}" alt="">
+</div>
+<div class="blogInf_txt">
+    <div class="grou_txt">
+        <div class="grou_img">
+            <img src="{{blog.blogs_Image.url}}" alt="">
+        </div>
+        <div class="grou_txtp">
+            <div class="grou_icon">
+                <div class="grou_time">
+                    <i class='bx bx-user'></i>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="grou_time">
+                    <i class='bx bx-time-five'></i>
+                    <p>lorem 12 </p>
+                </div>
+            </div>
+            <h3>{{blog.blogs_TxtH}}</h3>
+            <p>
+                {{blog.blogs_Txt}}
+            </p>
+        </div>
+
+    </div>
+</div>
+{%endblock%}

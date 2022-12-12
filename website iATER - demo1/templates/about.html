@@ -1,0 +1,127 @@
+ {% extends "base.html" %} {%block content%} {% load static %}
+<link rel="stylesheet" href="{% static 'css/abouts.css' %}">
+
+<div class="text__containen">
+    <div class="text__content">
+
+        <div class="text__content-box1">
+            {% for a in about_head %}
+            <h1 class="text__info">{{a.about_h}}</h1>
+            <p class="text__form">{{a.about_t}}</p>
+            {% endfor %}
+        </div>
+
+        <div class="img__comtent">
+            <img src="{% static 'img/r1.svg' %}" class="img-box1">
+            <img src="{% static 'img/r2.svg' %}" class="img-box2">
+            <img src="{% static 'img/r3.svg' %}" class="img-box3">
+            <img src="{% static 'img/r4.svg' %}" class="img-box4">
+        </div>
+
+    </div>
+</div>
+<div class="about_container">
+    <div class="about__con_text">
+        <div class="about_h">
+            {% for a in about_service %}
+            <h1>{{a.about_service_h}}</h1>
+            <p>{{a.about_service_t}}</p>
+            {% endfor %}
+            <p>1. We research the future industries of 4th industrial technologies (AI, IOT, big data, robots, 3D printing, unmanned transportation, nanotechnology, etc.)</p>
+            <p>2. Efforts are being made to popularize IT through education and to bridge the technological gap with regions with poor environments.</p>
+            <p>3. Contribute to Laos and humanity with our talents.</p>
+        </div>
+        <div class="about_item">
+            <img src="{% static 'img/2.jpg' %}">
+        </div>
+    </div>
+
+    <div class="about_last_item">
+        {% for a in about_service_img %}
+        <div class="about_iater">
+            <h3>{{a.d_txt1}}</h3>
+            <img src="{{a.image1.url}}">
+        </div>
+        <div class="about_somItem">
+            <p>{{a.d_txt2}}</p>
+            <img src="{{a.image2.url}}">
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="text__content_about">
+        <h1>Unlock your skill</h1>
+        <p>We love to share and contribute. Below, you'll find our other resources for developers, tech enthusiasts and work as a team.</p>
+    </div>
+
+    <!-- infor_container -->
+    <div class="infor_container">
+        <div class="infor_conten">
+            <div class="infor_Item">
+                <div class="infor_sum_txt">
+                    <h1>Develop knowledge</h1>
+                    <p>ການພັດທະນາຄວາມຮູ້ດ້ານຄອມພີວເຕີ ແລະ ການຈັດລຳດັບຄວາມຄິດ, ການສືກສາຄົ້ນຄວ້າກ່ຽວກັບຄອມພີວເພີທາງດ້ານຊອບແວ, ຮຽນຮູ້ການພັດທະນາໂປຣແກຣມ ແລະສິ່ງໃຫມ່ ນອກຈາກນີ້ຍັງໄດ້ຮຽນຮູ້ພາສາຕ່າງປະເທດເຊັ່ນ: ພາສາອັງກີດ, ພາສາເກົາຫຼີ, ພາສາຈີນ</p>
+                </div>
+                <img class="asdasd" src="{% static 'img/team-business.jpg' %}" alt="">
+            </div>
+            <div class="infor_Item">
+                <img class="asdasd" src="{% static 'img/w_working.jpg' %}" alt="">
+                <div class="infor_sum_txt">
+                    <h1>Work as a team</h1>
+                    <p>ຮຽນຮູ້ການເຮັດວຽກເປັນທີມ, ການແລກປ່ຽນຄວາມຮູ້ເຊີ່ງກັນ ແລະ ກັນ ໃນການສ້າງໂປຣແກຣມນັ້ນຄວນເຮັດເປັນທີມເພື່ອຄວາມສະດວກ ແລະ ວ່ອງໄວໃຫ້ທັນເວລາທີ່ກຳຫນົດ ແລະ ແບ່ງຫນ້າທີ່ໃນການຮັບຜີດຊອບໃນເລືອງຕ່າງໆເພື່ອພັດທະນາທັກສະຂອງລະຄົນ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infor_work">
+            <div class="txt_head">
+                <h1>Send vocational teachers to school</h1>
+                <p>ການຝຶກອົບຮົມການຂຽນໂປຼແກຼມ ການສຶກສາ Scaratch ແລະການສ້າງເກມ ການຜະລິດຫຸ່ນຍົນ MS-OFFICE, Photoshop, English</p>
+            </div>
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <a href="{% url 'blogs' %}"><img src="{% static 'img/WhatsApp Image 2022-10-24 at 13.48.28.jpeg' %}" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>ໂຮງຮຽນ ລ້ຽງເດັກດີນດີ</h3>
+                        <p>ການຝຶກອົບຮົມການຂຽນໂປຼແກຼມທີ່ໂຮງຮຽນ ລ້ຽງເດັກດີນດີ ໃນປີ 2022</p>
+                        <a href="{% url 'blogs' %}" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <a href="{% url 'blogs' %}"><img src="{% static 'img/7.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>ການສອນການໃຊ້ໂປຣແກຣມຄອມພິວເຕີເບືອງຕົ້ນ</h3>
+                        <p>ການຝຶກອົບຮົມການຂຽນໂປຼແກຼມທີ່ສູນ CMC ໃນປີ 2019-2020</p>
+                        <a href="{% url 'blogs' %}" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <a href="{% url 'blogs' %}"><img src="{% static 'img/8.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <h3>ການຝຶກອົບຮົມການຂຽນໂປຼແກຼມ Scaratch </h3>
+                        <p>ການຝຶກອົບຮົມການຂຽນໂປຼແກຼມ Scaratch ທີ່ໂຮງຮຽນ ສັນນີ ໃນປີ 2020-2021</p>
+                        <a href="{% url 'blogs' %}" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seemore">
+                <a href="#">See more</a>
+                <i class='bx bx-chevron-right'></i>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{%endblock%}

@@ -1,0 +1,38 @@
+{% extends "base.html" %} {%block content%} {% load static %}
+<link rel="stylesheet" href="{% static 'css/education.css' %}">
+<div class="text__containen">
+    <div class="text__content">
+        <div class="text__content-box1">
+            <h1 class="text__info">Lab Education</h1>
+            <p class="text__form">We create identity and experience to enhance and empower talent. <br> We create, maintain and contribute to recognized </p>
+        </div>
+        <div class="img__comtent">
+            <img src="{% static 'img/r1.svg' %}" class="img-box1">
+            <img src="{% static 'img/r2.svg' %}" class="img-box2">
+            <img src="{% static 'img/r3.svg' %}" class="img-box3">
+            <img src="{% static 'img/r4.svg' %}" class="img-box4">
+        </div>
+    </div>
+</div>
+<!-- About_container -->
+<div class="about_container">
+    <div class="infor_conten">
+        <div class="infor_Item">
+            <div class="infor_sum_txt">
+                <h1>ການສືກສາ ແລະ ພັດທະນາ</h1>
+                <p>ການພັດທະນາໂປຣແກຣມເປັນທີມ, ການສືກສາໃນດ້ານການພັດທະນາໂປຣແກຣມຕ່າງໆທີ່ມີພາສາ ແລະ ເຄືອງມືທີ່ແຕກຕ່າງກັນໄປ ເຊັ່ນ: Python, Java, HTML, CSS, JavaScript, Django, React, My SQL and more</p>
+            </div>
+            <img src="{% static 'img/r6.svg' %}">
+
+        </div>
+        <div class="infor_Item">
+            <img src="{% static 'img/r7.svg' %}">
+            <div class="infor_sum_txt">
+                <h1>ການພັດທະນາໃນແຕ່ລະດ້ານ</h1>
+                <p>Programming, Development, Software, Web</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
